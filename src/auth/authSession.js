@@ -112,10 +112,6 @@ export function getCoreSession(coreHost, corePort, apiPassword, appPrivateKey,
     return Promise.reject('No authRequest provided')
   }
 
-  if (!blockchainId) {
-    return Promise.reject('No blockchain ID given')
-  }
-
   let payload = null
   let authRequestObject = null
   try {
